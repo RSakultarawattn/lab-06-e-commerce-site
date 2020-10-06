@@ -59,3 +59,32 @@ export const souls = [
         
 
 ];
+
+export const cart = [
+
+    {
+        id:
+        quantity:
+
+    },
+    {
+        id:
+        quantity:
+
+    },
+    {
+        id:
+        quantity:
+
+    },
+    {
+        id:
+        quantity:
+
+    },
+    {
+        id:
+        quantity:
+
+    },
+];
