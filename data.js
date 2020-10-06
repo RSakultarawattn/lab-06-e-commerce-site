@@ -15,7 +15,7 @@ export const souls = [
 
         id: 'enraged',
         name: 'Enraged Soul',
-        image: '../assets/enraged-souls.webP',
+        image: 'enragedSoul.jpg',
         description: 'enraged, angry soul',
         category: 'dark souls',
         price: 4
@@ -26,7 +26,7 @@ export const souls = [
     {
         id: 'tranquil',
         name: 'Tranquil Soul',
-        image: '../assets/tranquil-soul.jpg',
+        image: 'tranquil-soul.jpg',
         description: 'tranquil, content soul',
         category: 'peaceful',
         price: 10
@@ -37,7 +37,7 @@ export const souls = [
     {
         id: 'laughing',
         name: 'Laughing Soul',
-        image: '../assets/laughing-soul.jpg',
+        image: 'laughing-soul.jpg',
         description: 'laughing, happy soul',
         category: 'peaceful',
         price: 10
@@ -48,7 +48,7 @@ export const souls = [
     {
         id: 'nervous',
         name: 'Nervous Soul',
-        image: '../assets/nervous-soul.jpg',
+        image: 'nervous-soul.jpg',
         description: 'nervous, nervous soul',
         category: 'dark souls',
         price: 10
@@ -63,28 +63,28 @@ export const souls = [
 export const cart = [
 
     {
-        id:
-        quantity:
+        id:'tortured',
+        quantity:2,
 
     },
     {
-        id:
-        quantity:
+        id: 'enraged',
+        quantity: 2,
 
     },
     {
-        id:
-        quantity:
+        id: 'tranquil',
+        quantity: 2,
 
     },
     {
-        id:
-        quantity:
+        id: 'laughing',
+        quantity: 2,
 
     },
     {
-        id:
-        quantity:
+        id: 'nervous',
+        quantity: 2
 
     },
 ];
