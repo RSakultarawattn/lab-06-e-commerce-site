@@ -26,6 +26,8 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-color: red;
+
 }
 
 main {
@@ -101,6 +103,11 @@ text-align: center;
 
 }
 
+.image {
+
+width: 200px;
+
+}
 
 content {
     width: 80%;

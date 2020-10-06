@@ -25,7 +25,7 @@ export function renderSouls(souls) {
 
     
     image.classList.add('image');
-    image.src = `../assets/${souls.image}`;
+    image.src = `./assets/${souls.image}`;
     li.appendChild(image);
 
     
