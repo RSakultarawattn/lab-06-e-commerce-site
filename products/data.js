@@ -60,7 +60,7 @@ export const souls = [
 
 ];
 
-export const cart = [
+export const cartStuff = [
 
     {
         id:'tortured',

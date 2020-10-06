@@ -15,15 +15,31 @@ export function renderTableRow(cartItem) {
     const soulData = findById(sourceOfTruth, cartItem.id);
 
     const price = soulData.price;
-    const title = soulData.name;
+    const name = soulData.name;
+    
 
     tdPrice.textContent = `$${price}`;
-    tdName.texContent = title;
+    tdName.texContent = name;
     tdTotal.textContent = `$${price * cartItem.quantity}`;
 
     tr.append(tdName, tdPrice, tdQuantity, tdTotal);
 
 
     
+
+}
+
+export function findById(soulArray, soulId) {
+
+    for ( let i = 0; i < soulArray.length; i++){
+        const item = soulArray[i]
+        if (item.id === soulId){
+            return item;
+        }
+
+        
+    }
+
+    return null;
 
 }
