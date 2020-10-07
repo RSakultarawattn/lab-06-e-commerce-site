@@ -3,7 +3,7 @@ export const souls = [
         id: 'tortured',
         name: 'Tortured Soul',
         image: 'tortured_soul.jpg',
-        description: 'tortured, despairing soul',
+        description: 'Tortured, Despairing soul',
         category: 'dark souls',
         price: 4
 
@@ -16,7 +16,7 @@ export const souls = [
         id: 'enraged',
         name: 'Enraged Soul',
         image: 'enragedSoul.jpg',
-        description: 'enraged, angry soul',
+        description: 'Enraged, Angry soul',
         category: 'dark souls',
         price: 4
 
@@ -27,7 +27,7 @@ export const souls = [
         id: 'tranquil',
         name: 'Tranquil Soul',
         image: 'tranquil-soul.jpg',
-        description: 'tranquil, content soul',
+        description: 'Tranquil, Content soul',
         category: 'peaceful',
         price: 10
 
@@ -38,7 +38,7 @@ export const souls = [
         id: 'laughing',
         name: 'Laughing Soul',
         image: 'laughing-soul.jpg',
-        description: 'laughing, happy soul',
+        description: 'Laughing, Happy soul',
         category: 'peaceful',
         price: 10
 

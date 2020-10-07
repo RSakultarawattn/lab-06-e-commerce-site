@@ -1,7 +1,7 @@
 
 
 
-import { renderTableRow } from '../cart/cartUtils.js';
+import { renderTableRow } from '../cart/cart-utils.js';
 import { souls } from '../products/data.js';
 
 
