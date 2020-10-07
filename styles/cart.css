@@ -1,0 +1,22 @@
+
+
+
+
+table {
+    width: 100%;
+    border: solid 2px;
+    background-color: red;
+}
+
+td, th {
+    border: solid 1px
+}
+
+th {
+    background-color: black;
+    color: yellow;
+}
+
+tr:nth-child(even) {
+    background: red;
+}

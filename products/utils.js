@@ -1,3 +1,14 @@
+
+
+/*
+for (let i = 0; i < someArray.length; i++)
+if (someArray[i].id === someId) {
+    return someArray[i]
+
+*/
+
+
+
 export function renderSouls(souls) {
 
     const li = document.createElement('li');
@@ -25,7 +36,7 @@ export function renderSouls(souls) {
 
     
     image.classList.add('image');
-    image.src = `./assets/${souls.image}`;
+    image.src = `../assets/${souls.image}`;
     li.appendChild(image);
 
     
