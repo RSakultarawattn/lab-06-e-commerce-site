@@ -1,31 +1,31 @@
 
+import { souls } from '../products/data.js';
 
-
-export function renderTableRow(cartItem) {
+export function renderTableRow(souls, cartItem) {
 
     const tr = document.createElement('tr');
-    const tdName =document.createElement('td');
-    const tdPrice =document.createElement('td');
-    const tdQuantity =document.createElement('td');
-    const tdTotal =document.createElement('td');
+    const tdName = document.createElement('td');
+    const tdPrice = document.createElement('td');
+    const tdQuantity = document.createElement('td');
+    const tdTotal = document.createElement('td');
 
     tdQuantity.textContent = cartItem.quantity;
 
 
-    const soulData = findById(sourceOfTruth, cartItem.id);
+    const soulData = findById(souls, cartItem.id);
 
     const price = soulData.price;
-    const name = soulData.name;
     
 
     tdPrice.textContent = `$${price}`;
-    tdName.texContent = name;
+    tdName.textContent = soulData.name;
+    
     tdTotal.textContent = `$${price * cartItem.quantity}`;
-
+    
     tr.append(tdName, tdPrice, tdQuantity, tdTotal);
 
 
-    
+    return tr;
 
 }
 
