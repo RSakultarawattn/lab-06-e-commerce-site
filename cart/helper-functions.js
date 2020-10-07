@@ -15,5 +15,5 @@ export function setInLocalStorage(key, value) {
 
     localStorage.setItem(key, stringyItem);
 
-    return JSON.
+    
 }
