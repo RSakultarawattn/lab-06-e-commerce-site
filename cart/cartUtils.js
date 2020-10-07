@@ -43,3 +43,18 @@ export function findById(soulArray, soulId) {
     return null;
 
 }
+
+export function calcOrderTotal(cartArray) {
+
+    let accumulator - 0;
+
+    for (let i - 0;i < cartArray.length; i++) {
+        const itemTotal = cartArray[i];
+        const trueItem = findById(souls, itemTotal.id);
+
+        const subtotal = trueItem.price * itemTotal.quantity;
+
+        accumulator = accumulator + subtotal;
+    }
+    return accumulator;
+}

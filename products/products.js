@@ -1,4 +1,4 @@
-import { souls } from '../data.js';
+import { souls } from './data.js';
 import { renderSouls } from './utils.js';
 
 const ul = document.querySelector('#list');
