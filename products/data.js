@@ -49,7 +49,7 @@ export const souls = [
         id: 'nervous',
         name: 'Nervous Soul',
         image: 'nervous-soul.jpg',
-        description: 'nervous, nervous soul',
+        description: 'Nervous, Twitchy soul',
         category: 'dark souls',
         price: 10
 
@@ -60,31 +60,31 @@ export const souls = [
 
 ];
 
-export const cartStuff = [
+// export const cartStuff = [
 
-    {
-        id:'tortured',
-        quantity:2,
+//     {
+//         id:'tortured',
+//         quantity:1,
 
-    },
-    {
-        id: 'enraged',
-        quantity: 2,
+//     },
+//     {
+//         id: 'enraged',
+//         quantity: 1,
 
-    },
-    {
-        id: 'tranquil',
-        quantity: 2,
+//     },
+//     {
+//         id: 'tranquil',
+//         quantity: 1,
 
-    },
-    {
-        id: 'laughing',
-        quantity: 2,
+//     },
+//     {
+//         id: 'laughing',
+//         quantity: 1,
 
-    },
-    {
-        id: 'nervous',
-        quantity: 2
+//     },
+//     {
+//         id: 'nervous',
+//         quantity: 1,
 
-    },
-];
+//     },
+// ];

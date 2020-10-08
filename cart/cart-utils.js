@@ -46,9 +46,9 @@ export function findById(soulArray, soulId) {
 
 export function calcOrderTotal(cartArray) {
 
-    let accumulator - 0;
+    let accumulator = 0;
 
-    for (let i - 0;i < cartArray.length; i++) {
+    for (let i = 0;i < cartArray.length; i++) {
         const itemTotal = cartArray[i];
         const trueItem = findById(souls, itemTotal.id);
 
