@@ -59,7 +59,7 @@ export function renderSouls(souls) {
     button.textContent = 'Add to cart';
     
     li.appendChild(button);
-
+    console.log(souls)
 
      button.addEventListener('click',() => {
 
@@ -73,6 +73,8 @@ export function renderSouls(souls) {
             const newCartItem = {
                 id: souls.id,
                 quantity: 1,
+                name: souls.name,
+                price: souls.price,
             };
             cartStuff.push(newCartItem)
         }
