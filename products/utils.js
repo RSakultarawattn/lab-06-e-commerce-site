@@ -1,5 +1,7 @@
 
 
+import { findById } from '../cart/cart-utils.js';
+import { getFromLocalStorage, setInLocalStorage } from '../cart/helper-functions.js';
 /*
 for (let i = 0; i < someArray.length; i++)
 if (someArray[i].id === someId) {
@@ -8,6 +10,8 @@ if (someArray[i].id === someId) {
 */
 
 
+
+//export const CART = 'CART';
 
 export function renderSouls(souls) {
 
@@ -52,9 +56,36 @@ export function renderSouls(souls) {
     li.appendChild(price);
 
 
-    button.textContent = 'Add to cart';
-    li.appendChild(button);
+    //button.textContent = 'Add to cart';
     
+    //li.appendChild(button);
+
+
+    //  button.addEventListener('click',() => {
+
+    //     const cartStuff = getFromLocalStorage(CART) || [];
+    
+    //     const itemInCart = findById(cartStuff, soul.id);
+
+    //     if (itemInCart === undefined) {
+
+
+    //         const newCartItem = {
+    //             id: soul.id,
+    //             quantity: 1,
+    //         };
+    //         cartStuff.push.newCartItem
+    //     }
+    //         else {
+    //             itemInCart.quantity++;
+    //         }
+    //         setInLocalStorage(CART, cartStuff);
+
+
+    // });
+    
+    // li.appendChild(button);
     return li;
 
 }
+
