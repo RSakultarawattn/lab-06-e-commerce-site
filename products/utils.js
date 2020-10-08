@@ -11,7 +11,7 @@ if (someArray[i].id === someId) {
 
 
 
-//export const CART = 'CART';
+export const CART = 'CART';
 
 export function renderSouls(souls) {
 
@@ -40,7 +40,7 @@ export function renderSouls(souls) {
 
     
     image.classList.add('image');
-    image.src = `../assets/${souls.image}`;
+    image.src = '../assets/' + souls.image;
     li.appendChild(image);
 
     
@@ -56,35 +56,35 @@ export function renderSouls(souls) {
     li.appendChild(price);
 
 
-    //button.textContent = 'Add to cart';
+    button.textContent = 'Add to cart';
     
-    //li.appendChild(button);
+    li.appendChild(button);
 
 
-    //  button.addEventListener('click',() => {
+     button.addEventListener('click',() => {
 
-    //     const cartStuff = getFromLocalStorage(CART) || [];
+        const cartStuff = getFromLocalStorage(CART) || [];
     
-    //     const itemInCart = findById(cartStuff, soul.id);
+        const itemInCart = findById(cartStuff, soul.id);
 
-    //     if (itemInCart === undefined) {
-
-
-    //         const newCartItem = {
-    //             id: soul.id,
-    //             quantity: 1,
-    //         };
-    //         cartStuff.push.newCartItem
-    //     }
-    //         else {
-    //             itemInCart.quantity++;
-    //         }
-    //         setInLocalStorage(CART, cartStuff);
+        if (itemInCart === undefined) {
 
 
-    // });
+            const newCartItem = {
+                id: soul.id,
+                quantity: 1,
+            };
+            cartStuff.push(newCartItem)
+        }
+            else {
+                itemInCart.quantity++;
+            }
+            setInLocalStorage(CART, cartStuff);
+
+
+    });
     
-    // li.appendChild(button);
+    li.appendChild(button);
     return li;
 
 }
