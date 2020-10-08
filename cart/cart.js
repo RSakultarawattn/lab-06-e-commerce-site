@@ -1,7 +1,7 @@
 
 import {  cartStuff } from '../products/data.js';
-import { renderSouls } from '../products/utils.js';
-import { renderTableRow } from './cart-utils.js';
+import { CART } from '../products/utils.js';
+import { renderTableRow, calcOrderTotal } from './cart-utils.js';
 import { getFromLocalStorage } from './helper-functions.js';
 
 const tr = document.querySelector('#list');

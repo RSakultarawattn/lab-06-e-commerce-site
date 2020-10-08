@@ -65,13 +65,13 @@ export function renderSouls(souls) {
 
         const cartStuff = getFromLocalStorage(CART) || [];
     
-        const itemInCart = findById(cartStuff, soul.id);
+        const itemInCart = findById(cartStuff, souls.id);
 
-        if (itemInCart === undefined) {
+        if (!itemInCart) {
 
 
             const newCartItem = {
-                id: soul.id,
+                id: souls.id,
                 quantity: 1,
             };
             cartStuff.push(newCartItem)
