@@ -60,31 +60,60 @@ export const souls = [
 
 ];
 
-// export const cartStuff = [
 
-//     {
-//         id:'tortured',
-//         quantity:1,
+export const cartStuff = [
 
-//     },
-//     {
-//         id: 'enraged',
-//         quantity: 1,
+    {
+        id: 'nervous',
+        name: 'Nervous Soul',
+        image: 'nervous-soul.jpg',
+        description: 'Nervous, Twitchy soul',
+        category: 'some category',
+        price: 10,
+        quantity: 1,
 
-//     },
-//     {
-//         id: 'tranquil',
-//         quantity: 1,
+},
+    {
+        id: 'nervous',
+        name: 'Nervous Soul',
+        image: 'nervous-soul.jpg',
+        description: 'Nervous, Twitchy soul',
+        category: 'dark souls',
+        price: 10,
+        quantity: 1,
 
-//     },
-//     {
-//         id: 'laughing',
-//         quantity: 1,
 
-//     },
-//     {
-//         id: 'nervous',
-//         quantity: 1,
+    },
+    {
+        id: 'nervous',
+        name: 'Nervous Soul',
+        image: 'nervous-soul.jpg',
+        description: 'Nervous, Twitchy soul',
+        category: 'dark souls',
+        price: 10,
+        quantity: 1,
 
-//     },
-// ];
+    },
+    {
+        id: 'nervous',
+        name: 'Nervous Soul',
+        image: 'nervous-soul.jpg',
+        description: 'Nervous, Twitchy soul',
+        category: 'dark souls',
+        price: 10,
+        quantity: 1,
+
+
+    },
+    {
+        id: 'nervous',
+        name: 'Nervous Soul',
+        image: 'nervous-soul.jpg',
+        description: 'Nervous, Twitchy soul',
+        category: 'dark souls',
+        price: 10,
+        quantity: 1,
+
+
+    },
+];
