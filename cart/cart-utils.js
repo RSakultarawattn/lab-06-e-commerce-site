@@ -1,7 +1,7 @@
 
-import { souls } from '../products/data.js';
+import { cartStuff } from '../products/data.js';
 
-export function renderTableRow(souls, cartItem) {
+export function renderTableRow (cartItem) {
 
     const tr = document.createElement('tr');
     const tdName = document.createElement('td');
@@ -11,14 +11,14 @@ export function renderTableRow(souls, cartItem) {
 
     tdQuantity.textContent = cartItem.quantity;
 
-
-    const soulData = findById(souls, cartItem.id);
-
-    const price = soulData.price;
     
+    const soulData = findById(cartItem.id);
 
+    const price = cartItem.price;
+    
+    console
     tdPrice.textContent = `$${price}`;
-    tdName.textContent = soulData.name;
+    tdName.textContent = cartItem.name;
     
     tdTotal.textContent = `$${price * cartItem.quantity}`;
     
@@ -44,15 +44,23 @@ export function findById(soulArray, soulId) {
 
 }
 
+
+export function calcLineItem(quantity, price){
+    const amount = quantity * price;
+    return amount;
+}
+
+
+
+
 export function calcOrderTotal(cartArray) {
 
     let accumulator = 0;
 
     for (let i = 0;i < cartArray.length; i++) {
-        const itemTotal = cartArray[i];
-        const trueItem = findById(souls, itemTotal.id);
-
-        const subtotal = trueItem.price * itemTotal.quantity;
+        const item = cartArray[i];
+        
+        const subtotal = item.price * item.quantity;
 
         accumulator = accumulator + subtotal;
     }
