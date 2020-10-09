@@ -20,8 +20,3 @@ th {
 tr:nth-child(even) {
     background: red;
 }
-.seen {
-
-    color: red;
-    
-}
