@@ -1,5 +1,6 @@
 
 
+import { PRODUCTS } from '../admin/constants.js';
 import { findById } from '../cart/cart-utils.js';
 import { getFromLocalStorage, setInLocalStorage } from '../cart/helper-functions.js';
 /*
@@ -9,6 +10,26 @@ if (someArray[i].id === someId) {
 
 */
 
+
+
+export function getLocalStorageSouls() {
+
+let localStorageSouls = JSON.parse(localStorage.getItem(PRODUCTS));
+
+if (!localStorageSouls) {
+
+    const stringySouls = JSON.stringify(hardCodedSouls);
+
+    localStorage.setItem(PRODUCTS, stringySouls);
+    localStorageSouls = hardCodedSouls;
+}
+
+return localStorageSouls;
+
+
+
+
+}
 
 
 export const CART = 'CART';
