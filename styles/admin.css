@@ -1,0 +1,29 @@
+
+
+
+
+label {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
+
+
+input {
+    display: flex;
+    height: 30px;
+     margin-top: 10%;
+     width: 100px;
+}
+
+
+button {
+
+    
+    margin-left: 40%;
+   
+
+}
