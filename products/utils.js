@@ -3,6 +3,7 @@
 import { PRODUCTS } from '../admin/constants.js';
 import { findById } from '../cart/cart-utils.js';
 import { getFromLocalStorage, setInLocalStorage } from '../cart/helper-functions.js';
+import { souls } from './data.js';
 /*
 for (let i = 0; i < someArray.length; i++)
 if (someArray[i].id === someId) {
@@ -14,17 +15,17 @@ if (someArray[i].id === someId) {
 
 export function getLocalStorageSouls() {
 
-let localStorageSouls = JSON.parse(localStorage.getItem(PRODUCTS));
+    let localStorageSouls = JSON.parse(localStorage.getItem(PRODUCTS));
 
-if (!localStorageSouls) {
+    if (!localStorageSouls) {
 
-    const stringySouls = JSON.stringify(hardCodedSouls);
+        const stringySouls = JSON.stringify(souls);
 
-    localStorage.setItem(PRODUCTS, stringySouls);
-    localStorageSouls = hardCodedSouls;
-}
+        localStorage.setItem(PRODUCTS, (stringySouls));
+        localStorageSouls = (stringySouls);
+    }
 
-return localStorageSouls;
+    return localStorageSouls;
 
 
 

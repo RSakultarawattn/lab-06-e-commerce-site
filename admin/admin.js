@@ -1,7 +1,9 @@
-const form = document.querySelector('form');
-import { PRODUCTS } from './constants.js';
-import { getLocalStorageSouls } from '../utils.js';
 
+import { PRODUCTS } from './constants.js';
+import { getLocalStorageSouls } from '../products/utils.js';
+import { setInLocalStorage } from '../cart/helper-functions.js';
+
+const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     
@@ -14,7 +16,7 @@ form.addEventListener('submit', (e) => {
     const quantity = data.get('quantity');
     const price = data.get('price');
 
-console.log('submit')
+    console.log('submit')
     const newSoul = {
 
         id: id,
@@ -27,7 +29,7 @@ console.log('submit')
 
 
     };
-
+    
     const localStorageSouls = getLocalStorageSouls();
     localStorageSouls.push(newSoul);
 
